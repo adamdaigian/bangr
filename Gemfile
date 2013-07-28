@@ -32,8 +32,8 @@ end
 
 gem 'jquery-rails'
 gem 'haml-rails'
-# gem 'omniauth-facebook'
-# gem 'omniauth'
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'jquery-rails'
 gem 'devise'
 
