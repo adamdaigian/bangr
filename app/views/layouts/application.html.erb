@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">	
+  <title>Meetr</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+   <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+  
+    <a href="./" class="navbar-brand">Bangr</a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="nav-collapse collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+            <% if user_signed_in? %>
+          Signed in as <%= current_user.email %>. Not you?
+        </li>
+        <li>
+            <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+        </li>
+        <li>    
+          <% else %>
+            <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Sign in", new_user_session_path %>
+          <% end %>
+        </li>
+       <!--  <li>
+          <a href="./css">CSS</a>
+        </li>
+        <li>
+          <a href="./components">Components</a>
+        </li>
+        <li>
+          <a href="./javascript">JavaScript</a>
+        </li>
+        <li>
+          <a href="./customize">Customize</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+ 
+  <div class="bs-header">
+    <h1 class="text-center">Meetr</h1>
+    <p class="lead text-center">The fun way to date at General Assembly's Web Development Immersive.</p>
+  </div>
+</div>
+
+<div class="container">
+<!-- <div class="offset-col-6 col-sm-6 col-lg-6 center"> -->
+<%= yield %>
+<!-- </div> -->
+</div>
+</body>
+</html>
