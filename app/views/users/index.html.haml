@@ -1,8 +1,28 @@
 .row
-  .col-6
-    %br  
-      %p Hello 
-    
-    = current_user.email
+  .offset-col-3.col-sm-6
+    %br
+    %h4.text-center
+      Hello, 
+      = current_user.email
 
-    = render 'users'
+    %h4.text-center
+      Let's get your profile started!
+
+    %p.text-center
+      %button.btn.btn-success
+        okay!
+
+    %br
+    %h4.text-center
+      Let's meet some new people
+
+    %p.text-center
+      %button.btn.btn-info
+        okay!
+
+
+
+
+
+
+    / = render 'users'

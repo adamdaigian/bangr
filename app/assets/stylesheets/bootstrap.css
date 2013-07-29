@@ -4684,7 +4684,6 @@ td.visible-print {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   background: url('dating.jpg') no-repeat fixed;
-  /*background-repeat: no-repeat;*/
   background-size: 100%;
 }
 .bs-header h1 {
