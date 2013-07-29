@@ -4686,7 +4686,6 @@ td.visible-print {
   background: url('dating.jpg') no-repeat fixed;
   /*background-repeat: no-repeat;*/
   background-size: 100%;
-  background-opacity: .4;
 }
 .bs-header h1 {
   color: #563d7c;
